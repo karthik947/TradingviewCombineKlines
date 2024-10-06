@@ -4,9 +4,15 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Converted Klines</title>
   </head>
   <body>
+    <select onchange="displayChart(this.value)">
+      <option value="5m" default>5m</option>
+      <option value="10m">10m</option>
+      <option value="15m">15m</option>
+      <option value="1h">1h</option>
+    </select>
     <div id="tvchart"></div>
   </body>
   <script src="https://unpkg.com/lightweight-charts/dist/lightweight-charts.standalone.production.js"></script>
